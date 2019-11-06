@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</head>
+<body>
+	<!-- botao que inicia o serviço de receber os dados e guardar no banco de dados -->
+	<button onclick="getService()">Start Serviço</button>
+	<!-- botao que para a aplicação-->
+	<button onclick="stopService('desligar')">Pausar Servico</button>
+
+	<!-- Criação da tabela em html para receber os dados do banco-->
+	<table id="myTable" border="1" style="width:100%">
+		<tr>
+		 <caption>Umidade do solo em porcentagem(%)</caption>
+		 <thead>
+			<td>Id</td>
+			<td>Nome</td>
+			<td>porcentagem</td>
+			<td>Criado em</td>
+			<td>atualizado em</td>
+			</thead>
+		</tr>
+	</table>
+
+</body>
+
+</html>
